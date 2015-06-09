@@ -1,0 +1,5 @@
+<ul class="nav nav-sidebar">
+    <li data-ng-repeat="view in ctrl.views" ng-class="{ active : ctrl.isActiveView(view) }">
+        <a href="#{{ view.url }}">{{ view.label }}</a>
+    </li>
+</ul>
